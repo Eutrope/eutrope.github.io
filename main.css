@@ -1,0 +1,37 @@
+html, body {
+    //font-family: 'Sacramento', cursive;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    //color: #ccc;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+
+/* Parallax */
+.parallax {
+    //position: relative;
+    height: 400px;
+    background: url(images/kokuhaku.png) no-repeat fixed;
+    background-size: cover;
+    padding: 0;
+    background-position: 0 -40px;
+    margin: 0;
+}
+
+.header {
+    //font-family: 'Raleway', sans-serif;
+    font-family: 'Euphoria Script', cursive;
+    margin: 0 auto;
+    line-height: 400px;
+    font-size: 50px;
+    text-shadow: 2px 2px 8px grey;
+}
+
+.shadow {
+    text-shadow: 2px 2px 5px grey;
+}
