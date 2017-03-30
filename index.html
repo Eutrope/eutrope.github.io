@@ -3,26 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ha Mi Nguyen</title>
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <!-- Body fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <!-- H1 fonts -->
     <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+    <!-- Hi, I'm Ha Mi font -->
     <link href="https://fonts.googleapis.com/css?family=Euphoria+Script" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="main.css"/>
 </head>
 <body>
-<<<<<<< HEAD
-<header class="parallax">
-    <h1 class="header">{ Hi, I'm Ha Mi }</h1>
+<header class="parallax" id="home">
+    <h1 id="name">{ Hi, I'm Ha Mi }</h1>
+    <nav id="nav">
+        <div class="menu">
+            <div class="navButton">
+                <!--- These hr tags are for the nav menu button on tablets and mobile devices. Hidden otherwise --->
+                <hr>
+                <hr>
+                <hr>
+            </div>
+        </div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 </header>
+<section>
+    <div class="tomato"></div>
+    <div class="content" id="about">
+        <h1>{ About me }</h1>
+        <hr>
+        <p>Hi, I'm Ha Mi. I'm Computer Science and Industrial Relations student at McGill University.<br><br>Enjoy
+            browsing at my attempt of developing a responsive, mobile first website. I'm still working
+            making this website more awesome so stay on the look out for new updates!<br>
+        <p style="color: lightseagreen; display: inline; font-weight: 100; text-transform: uppercase; font-size: 12px; letter-spacing: 3px">
+            Currently dabbling in: </p>
+        <p style="text-transform: uppercase; font-size: 12px; display: inline; letter-spacing: 3px">Web Development and
+            CSS animation</p>
+        <p><i class="fa fa-arrow-right" aria-hidden="true"></i> Want to see some of my CSS animations? check it out <a
+                href="buttons.html"
+                style="text-decoration: none; color: #DD5143"
+                target="_blank">here!</a></p>
 
-<h1 class="shadow" style="margin-top: 40px">Welcome! The site is currently under construction. I'm busy working on something awesome... Stay tuned!</h1>
+        <p><i class="fa fa-arrow-right" aria-hidden="true"></i> Curious of my thoughts and feelings about the entire
+            process so far? if so, check it out <a href="journal.html"
+                                                   style="text-decoration: none; color: #DD5143"
+                                                   target="_blank">here!</a></p>
+    </div>
 
-<div style="height: 2000px"></div>
-=======
-<p>Work in progress</p>
->>>>>>> 78f85bc7ede858bd9196bb20834cf64b723e3c10
+    <div class="tomato"></div>
+
+    <div class="content" id="education">
+        <h1>{ Education }</h1>
+        <hr>
+        <div class="schoolInfo">
+            <h3>McGill University, Montreal Quebec</h3>
+            <h6 style="color: lightseagreen; text-transform: uppercase; letter-spacing: 2px; font-weight: 100;">Computer
+                Science and Industrial Relations</h6>
+            <hr>
+            <h4>Course Work</h4>
+        </div>
+        <div class="courses">
+            <p><i class="fa fa-laptop" aria-hidden="true"></i> Foundations of Programming<br>
+                <i class="fa fa-laptop" aria-hidden="true"></i> Introduction to Computer Science<br>
+                <i class="fa fa-laptop" aria-hidden="true"></i> Introductions to Software Systems<br>
+                <i class="fa fa-user-o" aria-hidden="true"></i> Collective Bargaining<br>
+                <i class="fa fa-user-o" aria-hidden="true"></i> Human Resources Management<br>
+                <i class="fa fa-user-o" aria-hidden="true"></i> Negotiations and Conflict Resolution<br>
+                <i class="fa fa-user-o" aria-hidden="true"></i> Labour Market and Wages<br>
+                <i class="fa fa-user-o" aria-hidden="true"></i> Sociology of Work and Industry<br>
+                <i class="fa fa-user-o" aria-hidden="true"></i> Sociology of the Welfare State<br>
+            </p>
+        </div>
+    </div>
+
+    <div class="tomato"></div>
+
+    <div class="content" id="skills">
+        <h1>{ Skills }</h1>
+        <hr>
+        <div class="skills">
+            <p>Java<br>
+                Bash<br>
+                C<br>
+                HTML & CSS<br>
+            </p>
+            <p>To do: Python & Javascript</p>
+        </div>
+    </div>
+
+    <div class="tomato"></div>
+
+    <div class="content" id="contact">
+        <h1>{ Contact }</h1>
+        <hr>
+        <p>Want to know more? Feel free to email me at haminguyen@hotmail.com
+        </p>
+        <p>In the mean time, lets stay connect!</p>
+        <div class="socialNetwork">
+            <a href="https://www.linkedin.com/in/hami-nguyen/" target="_blank" id="linkedIn"><i class="fa fa-linkedin"
+                                                                                                aria-hidden="true"></i></a>
+            <a href="https://github.com/Eutrope" target="_blank" id="github"><i class="fa fa-github"
+                                                                                aria-hidden="true"></i></a>
+            <a href="mailto:haminguyen@hotmail.com" target="_top" id="email"><i class="fa fa-envelope-o"
+                                                                                aria-hidden="true"></i></a>
+        </div>
+    </div>
+</section>
+<!-- Adding space at the bottom of the section to reveal the footer if the footer has a lot of stuff in it -->
+<!-- <div style="height: 200px"></div> -->
+<footer>
+    <p>Ha Mi Nguyen, 2017</p>
+</footer>
+
+<!---------- Scripts ---------->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="js/functions.js"></script>
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-96322753-1', 'auto');
+    ga('send', 'pageview');
+</script>
+<script src="https://use.fontawesome.com/305b1c0f28.js"></script>
 </body>
 </html>

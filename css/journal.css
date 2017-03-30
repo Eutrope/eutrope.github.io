@@ -1,0 +1,55 @@
+html {
+    font-family: 'Raleway', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background: lightblue;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-top: 50px;
+    color: white;
+}
+
+h3 {
+    text-align: center;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-top: 20px;
+    color: white;
+}
+
+.wrapper {
+    width: 40em;
+    height: auto;
+    background: white;
+    border-radius: 5px;
+    margin: 0 auto;
+    box-shadow: 0 8px 8px -6px #777;
+}
+
+.info {
+    text-align: justify;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: tomato;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 650px) {
+    .wrapper {
+        width: 95vw;
+    }
+}

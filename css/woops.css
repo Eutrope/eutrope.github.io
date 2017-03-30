@@ -1,0 +1,72 @@
+html, body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.error {
+    color: #333f52;
+    text-align: center;
+}
+
+.error h1 {
+    font-size: 200px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.error p {
+    font-size: 20px;
+    text-shadow: 3px 2px 10px grey;
+}
+
+.content {
+    width: auto;
+    height: auto;
+    background: #f9ce77;
+    margin-top: 100px;
+    padding: 20px;
+}
+
+.connected {
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 100;
+}
+
+a {
+    text-decoration: none;
+    color: tomato;
+}
+
+.socialNetwork {
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 10px;
+}
+
+.socialNetwork a {
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+#linkedIn:hover {
+    color: #0077B5;
+}
+
+#github:hover {
+    color: #6e5494;
+}
+
+#email:hover {
+    color: #c9510c;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 650px) {
+    .error h1 {
+        font-size: 50vw;
+    }
+}
