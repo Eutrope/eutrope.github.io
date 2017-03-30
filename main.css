@@ -1,37 +1,339 @@
 html, body {
-    //font-family: 'Sacramento', cursive;
     font-family: 'Raleway', sans-serif;
     margin: 0;
 }
 
 h1 {
     text-align: center;
-    //color: #ccc;
     font-weight: 100;
-    font-size: 20px;
 }
 
-
-/* Parallax */
-.parallax {
-    //position: relative;
-    height: 400px;
-    background: url(images/kokuhaku.png) no-repeat fixed;
-    background-size: cover;
-    padding: 0;
-    background-position: 0 -40px;
-    margin: 0;
+h3, h4 {
+    font-weight: 100;
 }
 
-.header {
-    //font-family: 'Raleway', sans-serif;
+/* Hi, I'm Ha Mi */
+#name {
     font-family: 'Euphoria Script', cursive;
     margin: 0 auto;
+    /* Line height needs to match the height of parallax class to be in the middle */
     line-height: 400px;
-    font-size: 50px;
+    font-size: 4vw;
     text-shadow: 2px 2px 8px grey;
+    color: #333f52;
 }
 
-.shadow {
-    text-shadow: 2px 2px 5px grey;
+/* Parallax Header */
+.parallax {
+    position: relative;
+    height: 400px;
+/ / width: 100 %;
+    /* The background image */
+    /* Might want to put in separate div for monile responsiveness */
+    background: white url(images/kokuhaku.png) no-repeat center center fixed;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+    /* For not don't use this cause it'll cause problems on iphone 4 and 5 */
+/ / z-index: - 1;
+}
+
+/* Navbar Stuff */
+/* This nav bar is hidden and only revealed when on a mobile/tablet device */
+.navButton {
+    display: none;
+}
+
+nav {
+    top: 0;
+    position: fixed;
+/ / background: #333f52;
+    background: tomato;
+    width: 100%;
+    z-index: 1;
+    transition: 1s;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 11px;
+}
+
+nav ul {
+    margin: 0 30px;
+    padding: 0;
+    float: right;
+}
+
+nav li:nth-child(1) {
+    list-style-type: none;
+    padding: 11px 18px;
+    display: inline-block;
+    animation: nav 1s ease-in-out 0ms forwards;
+    opacity: 0;
+}
+
+nav li:nth-child(2) {
+    list-style-type: none;
+    padding: 11px 18px;
+    display: inline-block;
+    animation: nav 1s ease-in-out 300ms forwards;
+    opacity: 0;
+}
+
+nav li:nth-child(3) {
+    list-style-type: none;
+    padding: 11px 18px;
+    display: inline-block;
+    animation: nav 1s ease-in-out 600ms forwards;
+    opacity: 0;
+}
+
+nav li:nth-child(4) {
+    list-style-type: none;
+    padding: 11px 18px;
+    display: inline-block;
+    animation: nav 1s ease-in-out 900ms forwards;
+    opacity: 0;
+}
+
+nav li:nth-child(5) {
+    list-style-type: none;
+    padding: 11px 18px;
+    display: inline-block;
+    animation: nav 1s ease-in-out 1200ms forwards;
+    opacity: 0;
+}
+
+@keyframes nav {
+    0% {
+        opacity: 0;
+        transform: rotateX(90deg) translateY(-30px)
+    }
+    100% {
+        opacity: 1;
+        transform: rotateY(0deg) translateY(0px)
+    }
+
+}
+
+/* The content of the page/sections */
+.content {
+    /* Padding on the bottom so the paragraphs have space between new content */
+    padding: 50px 0;
+    /* max-width as oppose to width so the the content scales better on smaller screens */
+    max-width: 640px;
+    margin: 0 auto;
+    /* The following stuff affects the paragraphs that are in content */
+    font-size: 17px;
+/ / text-align: center;
+}
+
+.content h1 {
+    color: #333f52;
+    font-family: 'Sacramento', cursive;
+    font-size: 3vw;
+    text-shadow: 2px 2px 3px #ccc;
+}
+
+.schoolInfo {
+    text-align: center;
+}
+
+.skills {
+    text-align: center;
+}
+
+.courses {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.fa-user-o, .fa-laptop {
+    color: tomato;
+}
+
+.socialNetwork {
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 10px;
+}
+
+.socialNetwork a {
+    color: black;
+    transition: 0.3s ease-in-out;
+}
+
+#linkedIn:hover {
+    color: #0077B5;
+}
+
+#github:hover {
+    color: #6e5494;
+}
+
+#email:hover {
+    color: #c9510c;
+}
+
+.tomato {
+    background: tomato;
+    height: 10px;
+}
+
+hr {
+    width: 50%;
+    background-color: #f9ce77;
+    border: 0;
+    height: 1px;
+}
+
+/* Section that contains our content divs */
+section {
+    background: white;
+    /* Space on the bottom to reveal the footer */
+    margin-bottom: 200px;
+    position: relative;
+}
+
+/* Footer */
+footer {
+    background: #f9ce77;
+    color: white;
+/ / margin: 0 auto;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+/* Media Queries */
+
+/* Mobile Phones */
+@media screen and (max-width: 640px) {
+    #about, #contact {
+        text-align: center;
+    }
+
+    .courses {
+        width: 80%;
+        text-align: center;
+    }
+
+    #name {
+        font-size: 35px;
+        line-height: 320px;
+    }
+
+    .parallax {
+        height: 300px;
+        padding: 0;
+    }
+
+    .content h1 {
+        font-size: 35px;
+    }
+}
+
+/* Tablets */
+@media screen and (max-width: 1024px) {
+    .courses {
+        width: 80%;
+    }
+
+    #name {
+        font-size: 35px;
+        line-height: 320px;
+    }
+
+    .parallax {
+        height: 300px;
+        padding: 0;
+    }
+
+    .content h1 {
+        font-size: 35px;
+    }
+
+    .menu {
+        display: block;
+        height: 43px;
+        width: 100%;
+        background: darkgrey;
+    }
+
+    .navButton {
+        float: right;
+        display: block;
+        height: 38px;
+        width: 40px;
+        padding-top: 2px;
+    / / padding-bottom: 0;
+        margin-right: 6px;
+    }
+
+    .navButton hr {
+        background-color: white;
+        height: 2px;
+        width: 30px;
+        opacity: 0.6;
+        padding-top: 1px;
+        border-radius: 50px;
+    }
+
+    .navButton hr.open {
+        opacity: 1;
+    }
+
+    .navButton:hover {
+        cursor: pointer;
+    }
+
+    nav {
+        opacity: 0.8;
+        transition: none;
+    }
+
+    nav ul.open {
+        height: auto;
+        margin: 0;
+    }
+
+    .menu.open {
+        background: tomato;
+        opacity: 1;
+    }
+
+    nav.open {
+        background: none;
+        background: white;
+        opacity: 0.9;
+    }
+
+    nav a.open {
+        letter-spacing: 5px;
+    }
+
+    nav a {
+        font-size: 12px;
+        padding: 0;
+        text-align: right;
+        display: block;
+        color: black;
+    }
+
+    nav ul {
+        overflow: hidden;
+        height: 0;
+        padding: 0;
+    }
+
+    nav ul li {
+        width: 100vw;
+        padding: 0;
+    }
 }
