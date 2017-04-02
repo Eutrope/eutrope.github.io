@@ -1,3 +1,9 @@
+function hideLoader() {
+    document.getElementById("loading").style.display = "none";
+    document.getElementById("loading2").style.display = "none";
+    document.getElementById("preload").style.display = "none";
+}
+
 // Function for drop down menu on mobile phones using JQuery
 
 $(document).ready(function () {
