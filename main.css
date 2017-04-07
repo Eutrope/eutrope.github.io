@@ -48,8 +48,8 @@ h3, h4 {
 nav {
     top: 0;
     position: fixed;
-/ / background: #333f52;
-    background: tomato;
+    //background: #333f52;
+    background: lightseagreen;
     width: 100%;
     z-index: 1;
     transition: 1s;
@@ -205,8 +205,8 @@ nav li:nth-child(5) {
     color: #c9510c;
 }
 
-.tomato {
-    background: tomato;
+.separator {
+    background: lightseagreen;
     height: 10px;
 }
 
@@ -330,7 +330,7 @@ footer {
     }
 
     .menu.open {
-        background: tomato;
+        background: lightseagreen;
         opacity: 1;
     }
 
