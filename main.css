@@ -48,7 +48,7 @@ h3, h4 {
 nav {
     top: 0;
     position: fixed;
-    //background: #333f52;
+/ / background: #333f52;
     background: lightseagreen;
     width: 100%;
     z-index: 1;
@@ -109,6 +109,14 @@ nav li:nth-child(5) {
     opacity: 0;
 }
 
+nav li:nth-child(6) {
+    list-style-type: none;
+    padding: 11px 18px;
+    display: inline-block;
+    animation: nav 1s ease-in-out 1500ms forwards;
+    opacity: 0;
+}
+
 @keyframes nav {
     0% {
         opacity: 0;
@@ -157,7 +165,7 @@ nav li:nth-child(5) {
     color: tomato;
 }
 
-.fa-arrow-right{
+.fa-arrow-right {
     color: #ffc656;
     animation: point 1.2s ease-out infinite;
 }

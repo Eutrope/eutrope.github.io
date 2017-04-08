@@ -31,7 +31,8 @@
             <li><a href="#about">About me</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a>
         </ul>
     </nav>
 </header>
@@ -67,7 +68,7 @@
         <hr>
         <div class="schoolInfo">
             <h3>McGill University, Montreal Quebec</h3>
-            <h6 style="color: lightseagreen; text-transform: uppercase; letter-spacing: 2px; font-weight: 100;">Computer
+            <h6 style="color: lightseagreen; text-transform: uppercase; letter-spacing: 2px; font-weight: 100">Computer
                 Science and Industrial Relations</h6>
             <hr>
             <h4>Course Work</h4>
@@ -100,6 +101,44 @@
             </p>
             <p>To do: Python & Javascript</p>
         </div>
+    </div>
+
+    <div class="separator"></div>
+
+    <div class="content" id="projects">
+        <h1>{ Projects }</h1>
+        <hr>
+        <i class="fa fa-arrow-right" aria-hidden="true"></i> <a href="http://cgi.cs.mcgill.ca/~hnguye124/room.html"
+                                                                style="color: lightseagreen; text-transform: uppercase; letter-spacing: 2px; font-weight: 100; text-decoration: none"
+                                                                target="_blank">Retro
+        Multi-player Web-based Dungeon Crawler Game</a>
+        <p><i>This is a class assignment for my Software Systems class (winter 2017)</i></p>
+        <p>The player starts out in a room with <i>n</i> gold and <i>n</i> mana. Players type into the text box for
+            events to happen. The C program I wrote parses the query string that is passed via the POST and GET methods
+            from a form, commands that are recognized are then executed. A program called transporter.py takes the
+            player to a different room, bringing with them their gold and mana. One trip on the transporter costs 1
+            mana. The transporter program is responsible for calling the other rooms "refresh" command.</p>
+        <p>Every room has a challenge and when players win the challenge they get to take gold and mana from the rooms
+            hidden resources (a resources.csv file). The sum of gold and mana a player can pick up after winning a
+            challenge is 5. A player dies when his/her mana drops to 0, and wins when they obtain 100 gold.</p>
+        <p>Commands supported for this game are:</p>
+        <p>- <span style="color: tomato">Drop n:</span> to drop gold. For every 2 gold that is dropped the user gains 1
+            mana</p>
+        <p>- <span style="color: tomato">Refresh:</span> redraws the page with the players inventory</p>
+        <p>- <span style="color: tomato">Play:</span> The player is brought to a page which prompts him/her the option
+            to play the game. The player has a choice between playing the game and not playing the game (which would
+            bring them back to the default page)</p>
+        <p>- <span style="color: tomato">Bother:</span> bothers one of the NPC's. Doing so would result in the player
+            losing 2 mana</p>
+        <p>- <span style="color: tomato">Suicide:</span> a command that takes all the players mana and shows the "game
+            over" screen</p>
+        <p style="text-transform: uppercase; font-size: 15px">Created with: <span
+                style="border: 1px solid lightseagreen; border-radius: 14px; padding: 5px 10px">CGI Programming in C & Python</span>
+            <span style="border: 1px solid lightseagreen; border-radius: 14px; padding: 5px 10px">HTML</span>
+            <span style="border: 1px solid lightseagreen; border-radius: 14px; padding: 5px 10px">CSS</span>
+            <span style="border: 1px solid lightseagreen; border-radius: 14px; padding: 5px 10px">Javascript</span>
+
+        </p>
     </div>
 
     <div class="separator"></div>
