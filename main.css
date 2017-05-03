@@ -245,6 +245,15 @@ footer {
     z-index: -1;
 }
 
+.tabs {
+    border: 1px solid lightseagreen;
+    border-radius: 14px;
+    padding: 5px 10px;
+    display: inline-block;
+    background: lightseagreen;
+    color: white
+}
+
 /* Media Queries */
 
 /* Mobile Phones */
