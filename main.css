@@ -114,7 +114,7 @@ nav li {
 }
 
 .courses {
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
 }
 
@@ -223,8 +223,7 @@ hr {
     }
 
     .courses {
-        width: 80%;
-        text-align: center;
+        width: 100%;
     }
 
     nav {
