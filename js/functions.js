@@ -1,11 +1,32 @@
+// Modal stuff
+var modal = document.getElementById('myModal');
+var modalImg = document.getElementById("images");
+var captionText = document.getElementById("caption");
+
+// Function to open modal
+window.openModal = function(image) {
+    modal.style.display = "block";
+    modalImg.src = image.src;
+    captionText.innerHTML = image.alt;
+};
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+};
+
+// Function to hide the loader though there currently isn't one for this website
 function hideLoader() {
     document.getElementById("loading").style.display = "none";
     document.getElementById("loading2").style.display = "none";
     document.getElementById("preload").style.display = "none";
 }
 
-// Function for drop down menu on mobile phones using JQuery
 
+// Function for drop down menu on mobile phones using JQuery
 $(document).ready(function () {
     $(".navButton").on("click", function () {
         $("nav ul").toggleClass("open");
@@ -44,4 +65,5 @@ $(function () {
         }
     });
 });
+
 

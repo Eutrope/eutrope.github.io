@@ -98,6 +98,11 @@
                                                                     target="_blank">Retro
             Multi-player Web-based Dungeon Crawler Game</a>
             <p><i>This is a class assignment for my Software Systems class (winter 2017)</i></p>
+
+            <!-- Trigger the Modal -->
+            <img class="myImg" onclick="openModal(this);" src="images/game.png" alt="Retro
+            Multi-player Web-based Dungeon Crawler Game" width="300" height="200" style="float: left; margin: 0 20px 20px 0">
+
             <p>The player starts out in a room with <i>n</i> gold and <i>n</i> mana. Players type into the text box for
                 events to happen. The C program I wrote parses the query string that is passed via the POST and GET
                 methods
@@ -129,8 +134,36 @@
                 <span class="tabs">HTML</span>
                 <span class="tabs">CSS</span>
                 <span class="tabs">Javascript</span>
-
             </p>
+
+            <br>
+            <i class="fa fa-arrow-right" aria-hidden="true"></i> <h4
+               style="color: lightseagreen; text-transform: uppercase; letter-spacing: 2px; font-weight: 100; display: inline-block; text-decoration: none">New Tab Google Chrome Extension</h4>
+
+            <img class="myImg" onclick="openModal(this);" src="images/image1.png" alt="Good Afternoon, Ha Mi" width="300" height="200">
+
+            <img class="myImg" onclick="openModal(this);" src="images/image2.png" alt="Good Evening, Ha Mi" width="300" height="200">
+
+
+            <p>This was a personal project that was created out of my curiosity to see what it takes to build a chrome extension. My extension overrides the new page tab to show the time, the date, a greeting that changes depending on the time of the day, as well as a background that also changes to the time of the day. The bar below the date allows for Google searches to be done (although unnecessary.. it was added for fun).</p>
+            <p style="text-transform: uppercase; font-size: 15px">Created with:
+                <span class="tabs">HTML</span>
+                <span class="tabs">CSS</span>
+                <span class="tabs">Javascript</span>
+            </p>
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+
+                <!-- The Close Button -->
+                <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+                <!-- Modal Content (The Image) -->
+                <img class="modal-content" id="images">
+
+                <!-- Modal Caption (Image Text) -->
+                <div id="caption"></div>
+            </div>
         </div>
 
         <div class="separator"></div>
