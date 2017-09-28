@@ -62,11 +62,19 @@ nav li {
 
 /* The content of the page/sections */
 
-/* Style the Image Used to Trigger the Modal */
+.profile {
+    float:left;
+    margin: 0 20px 20px 0;
+    border-radius: 50%;
+}
+
+/* All the modal stuff */
 .myImg {
     border-radius: 8px;
     cursor: pointer;
     transition: 0.3s;
+    height:250px;
+    max-width: 100%;
 }
 
 .myImg:hover {
@@ -156,6 +164,7 @@ nav li {
     }
 }
 
+/* Modal stuff ends here */
 
 .content {
     /* Padding on the bottom so the paragraphs have space between new content */
@@ -303,6 +312,12 @@ hr {
 
 /* Mobile Phones */
 @media screen and (max-width: 640px) {
+
+    .profile {
+        float: none;
+        margin: auto;
+
+    }
 
     .myImg, #gameImg {
         float: none;
