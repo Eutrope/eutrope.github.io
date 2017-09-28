@@ -73,6 +73,11 @@ nav li {
     opacity: 0.7;
 }
 
+#gameImg {
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
@@ -288,10 +293,25 @@ hr {
     .courses {
         width: 80%;
     }
+
+    .myImg {
+        display:block;
+        margin: auto;
+        padding: 5px;
+    }
 }
 
 /* Mobile Phones */
 @media screen and (max-width: 640px) {
+
+    .myImg, #gameImg {
+        float: none;
+        display:block;
+        margin: auto;
+        padding: 5px;
+    }
+
+
     .content {
         padding: 50px 20px;
     }
