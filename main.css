@@ -219,7 +219,7 @@ nav li {
 }
 
 .courses {
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
 }
 
@@ -300,7 +300,7 @@ hr {
     }
 
     .courses {
-        width: 80%;
+        width: 100%;
     }
 
     .myImg {
@@ -350,6 +350,7 @@ hr {
 
     .courses {
         width: 100%;
+        font-size: 84%;    /* changed this font size for mobile because of font scaling for courses */
     }
 
     nav {
